@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketMicroService", "MarketMicroService\MarketMicroService.csproj", "{1AE14C31-0788-4C28-A9EA-2E22C396181C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketMicroService", "BasketMicroService\BasketMicroService.csproj", "{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasketMicroService", "BasketMicroService\BasketMicroService.csproj", "{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountMicroService", "DiscountMicroService\DiscountMicroService.csproj", "{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
