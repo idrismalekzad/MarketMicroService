@@ -1,5 +1,7 @@
 using DiscountMicroService.Infrastructure.Context;
 using DiscountMicroService.Infrastructure.MappingProfile;
+using DiscountMicroService.Service.Implementation;
+using DiscountMicroService.Service.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,8 @@ namespace DiscountMicroService
         {
 
             services.AddControllers();
+
+            services.AddTransient<IDsicountService, DiscountService>();
 
             services.AddDbContext<DiscountDataBaseDontext>(o => o.UseSqlServer(Configuration["DiscountConnection"]));
 
