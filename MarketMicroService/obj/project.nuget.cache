@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0les6OLTlCNzBPY3R94VMB1EvIFOenq8jhnIfzi94uomW/ngMUJ0UKikfMrZKiwb6lF/Sl4vBLYM6nGS7dtObw==",
+  "dgSpecHash": "PgcOlBlnvNqa1etzjYfgRrpq0QVZ9tMuKdh45rDl0bjdPtrSXkVnpMK4jZy7w5rIO7lGUAsl+EsRNdxA6/+FTQ==",
   "success": true,
   "projectFilePath": "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj",
   "expectedPackageFiles": [
@@ -107,8 +107,7 @@
     "C:\\Users\\Amir\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Amir\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
