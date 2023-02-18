@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj": {}
+    "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj": {}
   },
   "projects": {
-    "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj": {
+    "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj",
+        "projectUniqueName": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj",
         "projectName": "MarketMicroService",
-        "projectPath": "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj",
-        "packagesPath": "C:\\Users\\Amir\\.nuget\\packages\\",
-        "outputPath": "F:\\Soheil\\Mvc\\Tamarin\\BugetoMicroservice\\MarketMicroService\\MarketMicroService\\obj\\",
+        "projectPath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\MarketMicroService.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Amir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -94,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
