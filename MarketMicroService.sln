@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasketMicroService", "Baske
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountMicroService", "DiscountMicroService\DiscountMicroService.csproj", "{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderMicroService", "ORderMIcrsservice\OrderMicroService.csproj", "{EA959143-3D86-4937-8BBE-276E6F40CEE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderMicroService", "ORderMIcrsservice\OrderMicroService.csproj", "{EA959143-3D86-4937-8BBE-276E6F40CEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketService.Web.FrontEnd", "MarketService.Web.FrontEnd\MarketService.Web.FrontEnd.csproj", "{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EA959143-3D86-4937-8BBE-276E6F40CEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA959143-3D86-4937-8BBE-276E6F40CEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA959143-3D86-4937-8BBE-276E6F40CEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
