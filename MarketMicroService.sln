@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketMicroService", "MarketMicroService\MarketMicroService.csproj", "{1AE14C31-0788-4C28-A9EA-2E22C396181C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductMicroService", "MarketMicroService\ProductMicroService.csproj", "{1AE14C31-0788-4C28-A9EA-2E22C396181C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasketMicroService", "BasketMicroService\BasketMicroService.csproj", "{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}"
 EndProject
