@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Api\" />
+    <Folder Include="RestSharpServices\Base\" />
   </ItemGroup>
 
 </Project>
