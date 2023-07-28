@@ -34,6 +34,13 @@ builder.Services.AddDbContext<ProductDatabaseContext>(p =>
 // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dataContext = scope.ServiceProvider.GetRequiredService<ProductDatabaseContext>();
+    dataContext.Database.Migrate();
+
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -47,7 +54,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
+app.MapControllers();
+
+app.Run();

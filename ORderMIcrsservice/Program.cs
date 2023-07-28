@@ -33,6 +33,13 @@ builder.Services.AddTransient<IOrderService, OrderService>();
 // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dataContext = scope.ServiceProvider.GetRequiredService<OrderDataBaseContext>();
+    dataContext.Database.Migrate();
+
+}
+
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -44,10 +51,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
 
 app.Run();
-
 

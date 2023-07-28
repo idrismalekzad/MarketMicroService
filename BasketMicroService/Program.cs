@@ -31,6 +31,13 @@ builder.Services.AddTransient<IBasketService, BasketMicroService.Service.Impleme
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dataContext = scope.ServiceProvider.GetRequiredService<BasketDataBaseContext>();
+    dataContext.Database.Migrate();
+
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();

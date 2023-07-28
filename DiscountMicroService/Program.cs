@@ -27,6 +27,7 @@ builder.Services.AddAutoMapper(typeof(DiscountMappingProfile));
 
 var app = builder.Build();
 
+
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
