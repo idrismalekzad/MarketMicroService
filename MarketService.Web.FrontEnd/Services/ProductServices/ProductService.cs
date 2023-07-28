@@ -16,7 +16,6 @@ namespace MarketService.Web.FrontEnd.Services.ProductServices
             this.restClient = restClient;
         }
 
-
         public IEnumerable<ProductDto> GetAllProduct()
         {
             var request = new RestRequest("/api/Product", Method.Get);

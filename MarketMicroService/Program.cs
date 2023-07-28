@@ -13,8 +13,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 var Configuration = builder.Configuration;

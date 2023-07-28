@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MarketService.Web.FrontEnd.Controllers
+namespace MarketService.Web.FrontEnd.Controllers.Mvc
 {
     public class HomeController : Controller
     {

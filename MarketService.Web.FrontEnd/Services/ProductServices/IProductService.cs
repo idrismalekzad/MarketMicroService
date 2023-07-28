@@ -13,9 +13,4 @@ namespace MarketService.Web.FrontEnd.Services.ProductServices
         IEnumerable<ProductDto> GetAllProduct();
         ProductDto Getproduct(Guid Id);
     }
-
-    
-
-
-   
 }

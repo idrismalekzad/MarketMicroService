@@ -1,10 +1,14 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MarketMicroService.Migrations
+#nullable disable
+
+namespace ProductMicroService.Migrations
 {
-    public partial class Init : Migration
+    /// <inheritdoc />
+    public partial class INit : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -48,6 +52,7 @@ namespace MarketMicroService.Migrations
                 column: "CategoryId");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
