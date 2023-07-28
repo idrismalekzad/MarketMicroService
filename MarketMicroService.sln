@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductMicroService", "MarketMicroService\ProductMicroService.csproj", "{1AE14C31-0788-4C28-A9EA-2E22C396181C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Service.Product", "MarketMicroService\Market.Service.Product.csproj", "{1AE14C31-0788-4C28-A9EA-2E22C396181C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasketMicroService", "BasketMicroService\BasketMicroService.csproj", "{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Service.Basket", "BasketMicroService\Market.Service.Basket.csproj", "{9C4AA5FF-E272-400A-A978-2493C2CEDA7A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountMicroService", "DiscountMicroService\DiscountMicroService.csproj", "{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Service.Discount", "DiscountMicroService\Market.Service.Discount.csproj", "{64285EF2-3A2B-4DF5-8E7C-3F42F92AB641}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderMicroService", "ORderMIcrsservice\OrderMicroService.csproj", "{EA959143-3D86-4937-8BBE-276E6F40CEE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Service.Order", "ORderMIcrsservice\Market.Service.Order.csproj", "{EA959143-3D86-4937-8BBE-276E6F40CEE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketService.Web.FrontEnd", "MarketService.Web.FrontEnd\MarketService.Web.FrontEnd.csproj", "{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.AService.UI", "MarketService.Web.FrontEnd\Market.AService.UI.csproj", "{F5A8903F-9C72-4D9E-8C0B-2D3BA86573B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
