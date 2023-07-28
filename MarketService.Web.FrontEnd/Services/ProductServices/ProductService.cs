@@ -14,14 +14,13 @@ namespace MarketService.Web.FrontEnd.Services.ProductServices
         public ProductService(RestClient restClient)
         {
             this.restClient = restClient;
-            restClient.Timeout = -1;
         }
 
 
         public IEnumerable<ProductDto> GetAllProduct()
         {
-            var request = new RestRequest("/api/Product", Method.GET);
-            IRestResponse response = restClient.Execute(request);
+            var request = new RestRequest("/api/Product", Method.Get);
+            var response = restClient.Execute(request);
             Console.WriteLine(response.Content);
             var products = JsonSerializer.Deserialize<List<ProductDto>>(response.Content);
             return products;
@@ -29,9 +28,9 @@ namespace MarketService.Web.FrontEnd.Services.ProductServices
 
         public ProductDto Getproduct(Guid Id)
         {
-            var request = new RestRequest($"/api/Product/{Id}", Method.GET);
+            var request = new RestRequest($"/api/Product/{Id}", Method.Get);
 
-            IRestResponse response = restClient.Execute(request);
+            var response = restClient.Execute(request);
 
             var product = JsonSerializer.Deserialize<ProductDto>(response.Content);
             return product;
