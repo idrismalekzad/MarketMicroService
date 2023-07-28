@@ -1,26 +1,49 @@
+using BasketMicroService.Service.Interfaces;
+using BasketService.Infrastructure.Contexts;
+using BasketService.Infrastructure.MappingProfile;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
 
-namespace BasketMicroService
+
+var builder = WebApplication.CreateBuilder(args);
+
+var configuration = builder.Configuration;
+
+// This method gets called by the runtime. Use this method to add services to the container.
+
+builder.Services.AddControllers();
+builder.Services.AddSwaggerGen(c =>
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BasketService", Version = "v1" });
+});
+builder.Services.AddDbContext<BasketDataBaseContext>(o => o.UseSqlServer
+(configuration["BasketConnection"]));
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
-    }
+builder.Services.AddAutoMapper(typeof(BasketMappingProfile));
+
+builder.Services.AddTransient<IBasketService, BasketMicroService.Service.Implemention.BasketService>();
+
+// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
+
+app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

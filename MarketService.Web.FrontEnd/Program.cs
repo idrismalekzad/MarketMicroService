@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var mvcBuilder = builder.Services.AddRazorPages();
 
 var Configuration = builder.Configuration;
+
 // This method gets called by the runtime. Use this method to add services to the container.
 
 builder.Services.AddControllersWithViews();
