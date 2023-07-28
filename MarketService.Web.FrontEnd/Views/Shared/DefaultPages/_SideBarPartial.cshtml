@@ -1,0 +1,105 @@
+﻿<!--sidebar wrapper -->
+<div class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+
+
+        <a href="/">
+
+            <img id="smallLgon" src="/panelcontent/logo/logo/Logo-eskenab.jpg" class="noneLogo" style="width:48px" alt="logo icon">
+        </a>
+        @*<div>
+        <h4 style="font-size:12px !important; text-align:center" class="logo-text">سامانه مدیریت تسهيلات از محل وجوه اداره شده</h4>
+        </div>*@
+        <div class="toggle-icon ms-auto" onclick="toggleMenu()">
+            <i class="bx bx-last-page"></i>
+        </div>
+        @*             <div class="toggle-icon ms-auto">
+        <i class="bx @(((string)ViewBag.lang=="fa")?"bx-last-page":"bx-first-page")"></i>
+        <i class="bx bx-last-page" ></i>
+        </div>*@
+    </div>
+
+    <!--navigation-->
+    <ul class="metismenu" id="menu">
+        @if (User.Identity.IsAuthenticated)
+        {
+
+            @*  @if (userRoleName != null && userRoleName.Any(x => x.ToLower() == "admin"))
+        {*@
+
+
+            <li>
+                <a class="has-arrow" href="javascript:;">
+                    <div class="parent-icon">
+                        <i class='bx bx-cog'></i>
+                    </div>
+                    <div class="menu-title">مدیریت</div>
+                </a>
+
+            </li>
+        }
+        <li>
+            <a class="has-arrow" href="javascript:;">
+                <div class="parent-icon">
+                    <i class='bx bx-donate-heart'></i>
+                </div>
+                <div class="menu-title">محصولات</div>
+            </a>
+            <ul>
+                <li>
+                    <a href="/CooperativePannel/Registered/">
+                        <div class="parent-icon">
+                            <i class="bx @(((string)ViewBag.lang=="fa")?"bx-left-arrow-alt":"bx-right-arrow-alt")  ">
+                            </i>
+                        </div>
+                        <div class="menu-title">محصولات ثبت شده</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/CooperativePannel/Potential">
+                        <div class="parent-icon">
+                            <i class="bx @(((string)ViewBag.lang=="fa")?"bx-left-arrow-alt":"bx-right-arrow-alt")  "> </i>
+                        </div>
+                        <div class="menu-title">مشتریان بالقوه</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+        @*}*@
+        @* else if (userRoleName != null && userRoleName.Any(x => x.ToLower() != "customer"))
+        {
+        <li>
+        <a href="/home/index">
+        <div class="parent-icon">
+        <i class='lni lni-clipboard'></i>
+        </div>
+        <div class="menu-title">تعاونی</div>
+        </a>
+        </li>
+
+
+        }
+        else
+        {
+        @if (User.Identity.IsAuthenticated && userRoleName != null && userRoleName.Any(a => a.ToLower() == "customer"))
+        {
+        <li>
+        <a href="/CompanyRegistration/">
+        <div class="parent-icon">
+        <i class='bx bx-building'></i>
+        </div>
+        <div class="menu-title"> تعاونی ها</div>
+        </a>
+        </li>
+        }
+
+
+
+        }*@
+
+    </ul>
+    <!--end navigation-->
+</div>
+<!--end sidebar wrapper -->

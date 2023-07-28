@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yxPc2UFZ0QsxBhLc56Q1gMe7lYnvwu921lbdVxA9iewcZbXPWMme73dOTfGAv9ObyuIH/0W9CvfLgJI7btG+9g==",
+  "dgSpecHash": "iaviSjGZUgkG1wiSSyxU400eQqwCQQg9WpkxPTJLwfe8fuihyFR193Fhbl95uMZ+D3ly4i/KyP1NEU8yb6ocOw==",
   "success": true,
-  "projectFilePath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\ProductMicroService.csproj",
+  "projectFilePath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\Market.Service.Product.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

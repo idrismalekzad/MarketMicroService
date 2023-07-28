@@ -3983,9 +3983,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\ProductMicroService.csproj",
-      "projectName": "ProductMicroService",
-      "projectPath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\ProductMicroService.csproj",
+      "projectUniqueName": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\Market.Service.Product.csproj",
+      "projectName": "Market.Service.Product",
+      "projectPath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\Market.Service.Product.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
       "outputPath": "E:\\Sohail\\Amoozesh\\MarketMicroservice\\MarketMicroService\\MarketMicroService\\obj\\",
       "projectStyle": "PackageReference",
