@@ -1,4 +1,4 @@
-﻿using MarketService.Web.FrontEnd.Models;
+﻿using Market.AService.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

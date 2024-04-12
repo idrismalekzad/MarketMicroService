@@ -4,6 +4,7 @@ option csharp_namespace = "DiscountMicroService.Proto";
 
 	service DiscountServiceProto{
 	rpc GetDiscountByCode(RequestGetDiscountByCode) returns (ResultGetDiscountByCode);
+	rpc GetDiscountByID(RequestGetDiscountById) returns (ResultGetDiscountByCode);
 	rpc useDisCount(RequestUseDiscount) returns(ResultUseDiscount);
 	rpc AddNewDiscount(RequestAddNewDiscount) returns(ResultAddNewDiscount);
 
@@ -13,9 +14,19 @@ option csharp_namespace = "DiscountMicroService.Proto";
 		string Code = 1;
 	}
 
+	message RequestGetDiscountById{
+		string Id =1;
+	}
+
 	message ResultGetDiscountByCode{
+		DiscountInfo Data = 1;
+		bool IsSuccess=2;
+		string Message=3;
+	}
+
+	message DiscountInfo{
 		string id =1;
-		int32 Ammount = 2;
+		int32 Amount = 2;
 		string Code = 3;
 		bool Used =4;
 	}
@@ -29,7 +40,7 @@ option csharp_namespace = "DiscountMicroService.Proto";
 	}
 
 	message RequestAddNewDiscount{
-		int32 Ammount =1;
+		int32 Amount =1;
 		string Code = 2;
 	}
 

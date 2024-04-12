@@ -28,26 +28,28 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.price)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @item.price.ToString("n0") تومان
+                </td>
+                <td>
+                    <a asp-action="Details"
+                       asp-controller="Product"
+                       asp-route-id="@item.id">
+                        جزئیات
+                    </a>
+                    <a asp-action="AddToBasket" asp-controller="Basket" asp-route-ProductId="@item.id" class="btn btn-success"> افزودن به سبد </a>
+
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

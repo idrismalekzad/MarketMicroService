@@ -107,8 +107,8 @@ namespace BasketMicroService.Service.Implemention
         public void TransferBasket(string anonymousId, string UserId)
         {
             var anonymousBasket = context.Baskets
-       .Include(p => p.Items)
-       .SingleOrDefault(p => p.UserId == anonymousId);
+           .Include(p => p.Items)
+           .SingleOrDefault(p => p.UserId == anonymousId);
 
             if (anonymousBasket == null) return;
 

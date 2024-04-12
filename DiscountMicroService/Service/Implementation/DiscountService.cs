@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DiscountMicroService.DtoObjects;
 using DiscountMicroService.Infrastructure.Context;
+using DiscountMicroService.Models;
 using DiscountMicroService.Service.Interfaces;
 using System;
 using System.Linq;
@@ -21,7 +22,24 @@ namespace DiscountMicroService.Service.Implementation
 
         public bool AddNewDiscount(string code, int amount)
         {
-            throw new NotImplementedException();
+            DiscountCode discountCode = new DiscountCode()
+            {
+                Amount = amount,
+                Code = code,
+                Used = false,
+            };
+            _dbContext.DiscountCodes.Add(discountCode);
+            _dbContext.SaveChanges();
+            return true;
+        }
+
+        public DiscountDto GetDiscountByID(Guid id)
+        {
+            var myObject = _dbContext.DiscountCodes.FirstOrDefault(ss => ss.ID.Equals(id));
+
+            var map = _mapper.Map<DiscountDto>(myObject);
+
+            return map;
         }
 
         public DiscountDto GetDiscountByCode(string code)
@@ -33,9 +51,14 @@ namespace DiscountMicroService.Service.Implementation
             return map;
         }
 
-        public bool UseDiscount(Guid id)
+        public bool UseDiscount(Guid Id)
         {
-            throw new NotImplementedException();
+            var discountCode = _dbContext.DiscountCodes.Find(Id);
+            if (discountCode == null)
+                throw new Exception("Discouint Not Found....");
+            discountCode.Used = true;
+            _dbContext.SaveChanges();
+            return true;
         }
     }
 }

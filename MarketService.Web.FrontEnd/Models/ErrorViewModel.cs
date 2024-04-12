@@ -1,6 +1,6 @@
 using System;
 
-namespace MarketService.Web.FrontEnd.Models
+namespace Market.AService.UI.Models
 {
     public class ErrorViewModel
     {

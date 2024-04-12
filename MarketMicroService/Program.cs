@@ -1,4 +1,6 @@
 using MarketMicroService.Infrastructure;
+using MarketMicroService.Services.Implimentation;
+using MarketMicroService.Services.Intefaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +30,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddDbContext<ProductDatabaseContext>(p =>
                          p.UseSqlServer(Configuration["ProductConnection"]));
 
+builder.Services.AddScoped<IProductService, ProductServices>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 var app = builder.Build();
@@ -43,7 +47,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MarketMicroService v1"));
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProductService v1"));
 }
 
 app.UseHttpsRedirection();

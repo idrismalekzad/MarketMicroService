@@ -1,3 +1,4 @@
+using DiscountMicroService.GRPC;
 using DiscountMicroService.Infrastructure.Context;
 using DiscountMicroService.Infrastructure.MappingProfile;
 using DiscountMicroService.Service.Implementation;
@@ -15,6 +16,7 @@ var Configuration = builder.Configuration;
 // This method gets called by the runtime. Use this method to add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddGrpc();
 
 builder.Services.AddTransient<IDsicountService, DiscountService>();
 
@@ -40,5 +42,5 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapGrpcService<GRPCDiscountService>();
 app.Run();

@@ -9,11 +9,11 @@ using System.Linq;
 
 namespace MarketMicroService.Services.Implimentation
 {
-    public class ProductService : IProductService
+    public class ProductServices : IProductService
     {
         private readonly ProductDatabaseContext context;
 
-        public ProductService(ProductDatabaseContext context)
+        public ProductServices(ProductDatabaseContext context)
         {
             this.context = context;
         }

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  market.aservice.ui:
+    image: ${DOCKER_REGISTRY-}marketaserviceui
+    build:
+      context: .
+      dockerfile: MarketService.Web.FrontEnd/Dockerfile
